@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-white font-sans antialiased;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(180, 130, 80, 0.5);
+  border-radius: 999px;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-6 md:px-10;
+}
+
+.panel {
+  @apply rounded-[28px] border border-borderSoft bg-mutedPanel/80 backdrop-blur-sm shadow-soft;
+}
+
+.input {
+  @apply w-full rounded-xl border border-borderSoft bg-black/60 px-4 py-3 text-sm text-white outline-none transition focus:border-primaryLight;
+}
+
+.label {
+  @apply mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-textSoft;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-2xl bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primaryLight;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-2xl border border-borderSoft bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10;
+}
