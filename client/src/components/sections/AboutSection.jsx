@@ -9,24 +9,23 @@ const cards = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="bg-black py-24">
-      <div className="section-shell grid gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
+    <section id="about" className="bg-black py-16 lg:py-24">
+      <div className="section-shell grid gap-10 lg:gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
         <div>
           <SectionHeading
             title="About Vault Tech Recovery"
             description="We are a specialist crypto recovery team combining forensic blockchain analysis with secure engineering. Our mission is to help verified users regain access to funds lost to scams, forgotten credentials, or compromised wallets."
           />
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4 lg:mt-10">
             <a href="#faq" className="btn-primary">Learn More</a>
-            <a href="#testimonials" className="rounded-2xl border border-primary bg-white px-6 py-3 font-semibold text-primary">Contact Us</a>
           </div>
         </div>
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
           {cards.map(([title, text]) => (
-            <article key={title} className="rounded-[26px] bg-[#dedede] p-8 text-slate-800 shadow-soft">
-              <div className="mb-6 h-10 w-10 rounded-xl border-2 border-[#d4a114]" />
-              <h3 className="text-2xl font-bold">{title}</h3>
-              <p className="mt-3 text-lg leading-8 text-slate-600">{text}</p>
+            <article key={title} className="rounded-[20px] bg-[#dedede] p-6 text-slate-800 shadow-soft sm:rounded-[26px] sm:p-8">
+              <div className="mb-4 h-9 w-9 rounded-xl border-2 border-[#d4a114] sm:mb-6 sm:h-10 sm:w-10" />
+              <h3 className="text-xl font-bold sm:text-2xl">{title}</h3>
+              <p className="mt-2 text-base leading-7 text-slate-600 sm:mt-3 sm:text-lg sm:leading-8">{text}</p>
             </article>
           ))}
         </div>

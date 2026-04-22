@@ -8,10 +8,10 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-hero">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_right,rgba(139,94,52,0.35),transparent_30%),linear-gradient(180deg,rgba(0,0,0,0.2),rgba(0,0,0,0.85))]" />
-      <div className="section-shell relative grid min-h-[85vh] items-center gap-12 py-20 lg:grid-cols-[1.03fr_0.97fr]">
+      <div className="section-shell relative grid min-h-[85vh] items-center gap-8 py-16 lg:gap-12 lg:py-20 lg:grid-cols-[1.03fr_0.97fr]">
         <div>
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65 }}>
-            <div className="mb-8 flex flex-wrap gap-6 text-sm text-textSoft">
+            <div className="mb-6 flex flex-wrap gap-3 text-sm text-textSoft sm:gap-6 sm:mb-8">
               {stats.map((item) => (
                 <span key={item} className="flex items-center gap-2">
                   <span className="h-2.5 w-2.5 rounded-full bg-primaryLight" />
@@ -19,21 +19,21 @@ export default function HeroSection() {
                 </span>
               ))}
             </div>
-            <h1 className="max-w-3xl text-5xl font-extrabold leading-[0.95] tracking-tight md:text-7xl">
+            <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[0.95]">
               We&apos;ll help you get back into your crypto wallet
             </h1>
-            <p className="mt-7 max-w-2xl text-xl leading-9 text-textSoft">
+            <p className="mt-5 max-w-2xl text-base leading-7 text-textSoft sm:text-lg sm:leading-8 md:text-xl md:leading-9 lg:mt-7">
               Forgot your password? Lost your recovery phrase? You&apos;re not alone. We guide verified users through a secure,
               isolated recovery workflow without exposing private credentials.
             </p>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4 lg:mt-10">
               <Link to="/recover" className="btn-primary gap-2">
                 Recover Wallet
                 <ChevronRight size={16} />
               </Link>
               <a href="#about" className="btn-secondary">How it works</a>
             </div>
-            <div className="mt-12 grid gap-4 sm:grid-cols-3">
+            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4 lg:mt-12">
               {[
                 ['No recovery, no fee guarantee', LockKeyhole],
                 ['24/7 expert support', BadgeCheck],
@@ -52,7 +52,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.96, y: 18 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="panel relative overflow-hidden p-4"
+          className="panel relative hidden overflow-hidden p-4 lg:block"
         >
           <div className="relative overflow-hidden rounded-[24px] border border-white/10 bg-[radial-gradient(circle_at_center,rgba(180,130,80,0.22),transparent_38%),linear-gradient(135deg,#1a120b,#28190f_35%,#101010)] p-10">
             <div className="absolute inset-0 opacity-50 [background-image:linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:30px_30px]" />

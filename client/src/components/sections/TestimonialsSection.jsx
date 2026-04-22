@@ -11,21 +11,29 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="testimonials" className="bg-cream py-24 text-slate-900">
+    <section id="testimonials" className="bg-cream py-16 text-slate-900 lg:py-24">
       <div className="section-shell">
-        <SectionHeading centered title="Testimonials" description="Real stories from real clients we have helped recover crypto assets." />
-        <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <SectionHeading
+          centered
+          title="Testimonials"
+          description="Real stories from real clients we have helped recover crypto assets."
+        />
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:mt-14 lg:gap-8 xl:grid-cols-3">
           {testimonials.map(([name, role, quote, rating]) => (
-            <article key={name} className="rounded-[28px] bg-white p-8 shadow-soft">
-              <div className="flex items-center gap-4">
-                <div className="grid h-14 w-14 place-items-center rounded-full bg-primary/20 text-lg font-bold text-primary">{name[0]}</div>
+            <article key={name} className="rounded-[22px] bg-white p-6 shadow-soft sm:rounded-[28px] sm:p-8">
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-primary/20 text-base font-bold text-primary sm:h-14 sm:w-14 sm:text-lg">
+                  {name[0]}
+                </div>
                 <div>
-                  <p className="text-2xl font-semibold">{name}</p>
-                  <p className="text-lg text-slate-500">{role}</p>
+                  <p className="text-xl font-semibold sm:text-2xl">{name}</p>
+                  <p className="text-base text-slate-500 sm:text-lg">{role}</p>
                 </div>
               </div>
-              <div className="mt-6 text-xl text-[#d4a114]">★★★★★ <span className="ml-2 text-base text-slate-500">{rating}</span></div>
-              <p className="mt-5 text-lg leading-8 text-slate-600">{quote}</p>
+              <div className="mt-4 text-lg text-[#d4a114] sm:mt-6 sm:text-xl">
+                ★★★★★ <span className="ml-2 text-sm text-slate-500 sm:text-base">{rating}</span>
+              </div>
+              <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">{quote}</p>
             </article>
           ))}
         </div>
