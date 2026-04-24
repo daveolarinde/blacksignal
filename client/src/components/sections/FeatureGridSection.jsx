@@ -2,7 +2,7 @@ import { BadgeDollarSign, Clock3, ShieldCheck, MessageCircleMore } from 'lucide-
 import SectionHeading from '../ui/SectionHeading';
 
 const features = [
-  ['No Upfront Fees', 'Only pay after a successful recovery.', BadgeDollarSign],
+
   ['Rapid Investigation', 'Fast triage and chain analysis to trace funds.', Clock3],
   ['Secure Protocols', 'Encrypted handling of sensitive data and wallet access.', ShieldCheck],
   ['24/7 Support', 'Real people available around the clock to help.', MessageCircleMore],

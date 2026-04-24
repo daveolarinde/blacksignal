@@ -1,12 +1,48 @@
 import SectionHeading from '../ui/SectionHeading';
 
 const testimonials = [
-  ['Sophia Patel', 'Entrepreneur', 'Funds were swept minutes after incoming transfers. The team designed a safe extraction plan and moved assets to a new wallet. Brilliant work!', '4.8/5'],
-  ['James Carter', 'Developer', 'I lost my seed backup and could not access tokens. They helped rebuild from partial data and recovered everything.', '5.0/5'],
-  ['Elena Rossi', 'Designer', 'Clear communication, no upfront fees and fast analysis. I recovered my ETH and NFTs within days.', '4.5/5'],
-  ['Marcus Lee', 'Founder', 'The portal felt private and the process stayed organized. It never felt like one of those shady recovery services.', '4.9/5'],
-  ['Hannah Nguyen', 'Investor', 'The discreet chat support made it easy to ask questions without exposing details publicly.', '4.7/5'],
-  ['Daniel Morales', 'Trader', 'They pushed me to provide proof, which was annoying at first, but honestly that made the workflow feel real.', '4.8/5']
+  {
+    name: 'Sophia Patel',
+    role: 'Entrepreneur',
+    quote: 'Funds were swept minutes after incoming transfers. The team designed a safe extraction plan and moved assets to a new wallet. Brilliant work!',
+    rating: '4.8/5',
+    image: 'https://randomuser.me/api/portraits/women/65.jpg'
+  },
+  {
+    name: 'James Carter',
+    role: 'Developer',
+    quote: 'I lost my seed backup and could not access tokens. They helped rebuild from partial data and recovered everything.',
+    rating: '5.0/5',
+    image: 'https://randomuser.me/api/portraits/men/32.jpg'
+  },
+  {
+    name: 'Elena Rossi',
+    role: 'Designer',
+    quote: 'Clear communication, no upfront fees and fast analysis. I recovered my ETH and NFTs within days.',
+    rating: '4.5/5',
+    image: 'https://randomuser.me/api/portraits/women/44.jpg'
+  },
+  {
+    name: 'Marcus Lee',
+    role: 'Founder',
+    quote: 'The portal felt private and the process stayed organized. It never felt like one of those shady recovery services.',
+    rating: '4.9/5',
+    image: 'https://randomuser.me/api/portraits/men/75.jpg'
+  },
+  {
+    name: 'Hannah Nguyen',
+    role: 'Investor',
+    quote: 'The discreet chat support made it easy to ask questions without exposing details publicly.',
+    rating: '4.7/5',
+    image: 'https://randomuser.me/api/portraits/women/68.jpg'
+  },
+  {
+    name: 'Daniel Morales',
+    role: 'Trader',
+    quote: 'They pushed me to provide proof, which was annoying at first, but honestly that made the workflow feel real.',
+    rating: '4.8/5',
+    image: 'https://randomuser.me/api/portraits/men/41.jpg'
+  }
 ];
 
 export default function TestimonialsSection() {
@@ -19,12 +55,14 @@ export default function TestimonialsSection() {
           description="Real stories from real clients we have helped recover crypto assets."
         />
         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:mt-14 lg:gap-8 xl:grid-cols-3">
-          {testimonials.map(([name, role, quote, rating]) => (
+          {testimonials.map(({ name, role, quote, rating, image }) => (
             <article key={name} className="rounded-[22px] bg-white p-6 shadow-soft sm:rounded-[28px] sm:p-8">
               <div className="flex items-center gap-3 sm:gap-4">
-                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-primary/20 text-base font-bold text-primary sm:h-14 sm:w-14 sm:text-lg">
-                  {name[0]}
-                </div>
+                <img
+                  src={image}
+                  alt={name}
+                  className="h-12 w-12 shrink-0 rounded-full object-cover sm:h-14 sm:w-14"
+                />
                 <div>
                   <p className="text-xl font-semibold sm:text-2xl">{name}</p>
                   <p className="text-base text-slate-500 sm:text-lg">{role}</p>

@@ -20,12 +20,23 @@ export default function HeroSection() {
               ))}
             </div>
             <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[0.95]">
-              We&apos;ll help you get back into your crypto wallet
+              Were you involved in a crypto scam?
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-7 text-textSoft sm:text-lg sm:leading-8 md:text-xl md:leading-9 lg:mt-7">
-              Forgot your password? Lost your recovery phrase? You&apos;re not alone. We guide verified users through a secure,
-              isolated recovery workflow without exposing private credentials.
+              If a platform disappeared with your funds, blocked your withdrawals, or manipulated your trades — you have options. We help victims document their case, report fraudulent platforms to the right authorities, and pursue every available recovery channel.
             </p>
+
+            {/* Wallet recovery sub-section */}
+            <div className="mt-10 border-l-2 border-primaryLight/40 pl-5 lg:mt-12">
+              <h2 className="text-xl font-bold text-white sm:text-2xl">
+                We&apos;ll help you get back into your crypto wallet
+              </h2>
+              <p className="mt-3 max-w-xl text-sm leading-6 text-textSoft sm:text-base sm:leading-7">
+                Forgot your password? Lost your recovery phrase? You&apos;re not alone. We guide verified users through a secure,
+                isolated recovery workflow without exposing private credentials.
+              </p>
+            </div>
+
             <div className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4 lg:mt-10">
               <Link to="/recover" className="btn-primary gap-2">
                 Recover Wallet

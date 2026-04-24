@@ -40,7 +40,7 @@ export default function RegisterPage() {
           </div>
           <div>
             <p className="text-2xl font-bold">Create an account</p>
-            <p className="text-sm text-textSoft">This gives clients access to the private recovery portal and hidden chatbox.</p>
+            {/* <p className="text-sm text-textSoft">This gives clients access to the private recovery portal and hidden chatbox.</p> */}
           </div>
         </div>
         <form onSubmit={handleSubmit} className="space-y-5">

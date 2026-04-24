@@ -149,7 +149,7 @@ export default function RecoveryWizardPage() {
                   </div>
                   <div className="md:col-span-2">
                     <label className="label">Phone Number *</label>
-                    <input className="input" value={form.phone} onChange={(e) => update('phone', e.target.value)} placeholder="(+234) 801 234 5678" />
+                    <input className="input" value={form.phone} onChange={(e) => update('phone', e.target.value)} placeholder="(+1) 801 234 5678" />
                   </div>
                   <div>
                     <label className="label">Wallet Type / Platform *</label>

@@ -13,7 +13,7 @@ export default function AboutSection() {
       <div className="section-shell grid gap-10 lg:gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
         <div>
           <SectionHeading
-            title="About Vault Tech Recovery"
+            title="About Blacksignal"
             description="We are a specialist crypto recovery team combining forensic blockchain analysis with secure engineering. Our mission is to help verified users regain access to funds lost to scams, forgotten credentials, or compromised wallets."
           />
           <div className="mt-8 flex flex-wrap gap-4 lg:mt-10">
