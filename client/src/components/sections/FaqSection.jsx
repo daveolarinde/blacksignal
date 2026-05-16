@@ -1,7 +1,7 @@
 import SectionHeading from '../ui/SectionHeading';
 
 const faqs = [
-  ['Will you ask for my seed phrase?', 'No. This product is designed around the opposite. Users should never provide their seed phrase or private key.'],
+  
   ['Can users chat privately with support?', 'Yes. The chatbox is only visible inside the authenticated portal and admin dashboard.'],
 ];
 

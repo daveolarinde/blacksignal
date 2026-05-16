@@ -63,9 +63,14 @@ export default function Navbar() {
               </button>
             </>
           ) : (
-            <Link to="/recover" className="btn-primary px-5 py-3">
-              Recover Wallet
-            </Link>
+            <>
+              <Link to="/login" className="btn-secondary px-5 py-3">
+                Login
+              </Link>
+              <Link to="/recover" className="btn-primary px-5 py-3">
+                Recover Wallet
+              </Link>
+            </>
           )}
         </div>
 
@@ -119,13 +124,22 @@ export default function Navbar() {
                 </button>
               </>
             ) : (
-              <Link
-                to="/recover"
-                className="btn-primary px-5 py-3 text-center"
-                onClick={handleNavClick}
-              >
-                Recover Wallet
-              </Link>
+              <>
+                <Link
+                  to="/login"
+                  className="btn-secondary px-5 py-3 text-center"
+                  onClick={handleNavClick}
+                >
+                  Login
+                </Link>
+                <Link
+                  to="/recover"
+                  className="btn-primary px-5 py-3 text-center"
+                  onClick={handleNavClick}
+                >
+                  Recover Wallet
+                </Link>
+              </>
             )}
           </div>
         </nav>

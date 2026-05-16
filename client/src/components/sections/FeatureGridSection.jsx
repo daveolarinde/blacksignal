@@ -8,8 +8,7 @@ const features = [
   ['24/7 Support', 'Real people available around the clock to help.', MessageCircleMore],
   ['Private Client Portal', 'Authenticated users can track their recovery case updates.', ShieldCheck],
   ['Admin Command Desk', 'Superadmins can review leads, upload notes, and respond via chat.', Clock3],
-  ['Document Uploads', 'Users can securely upload supporting proof during intake.', BadgeDollarSign],
-  ['Discreet Chatbox', 'Only logged-in users and admins can see the live support inbox.', MessageCircleMore]
+  ['Document Uploads', 'Users can securely upload supporting proof during intake.', BadgeDollarSign]
 ];
 
 export default function FeatureGridSection() {

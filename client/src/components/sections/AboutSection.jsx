@@ -4,7 +4,7 @@ const cards = [
   ['Secure Process', 'We use verifiable, audited steps to protect your identity and assets.'],
   ['Expert Team', 'Blockchain investigators, security engineers, and support specialists.'],
   ['Proven Track', 'A serious workflow for intake, review, and secure case handling.'],
-  ['Transparent Fees', 'No upfront payment. Pay only after successful recovery.']
+  
 ];
 
 export default function AboutSection() {
